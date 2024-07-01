@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page with JavaScript Manipulations</title>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 20px;
+        }
+        .hover-box {
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Product Display Section -->
+    <div id="product-list"></div>
+
+    <!-- Form Section -->
+    <form id="user-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Styling Section -->
+    <div id="box" onclick="changeColor()">Click me to change color</div>
+    <div class="hover-box" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)">Hover over me</div>
+    <button onclick="changeButtonStyle(this)">Click me to change my style</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
